@@ -1,0 +1,45 @@
+
+@keyframes changetext{
+
+    
+    
+    0%{content: "France";}
+    
+    
+    
+    10%{content: "Spain";}
+    
+    
+    
+    20%{content: "United States";}
+    
+    
+    
+    30%{content: "china";}
+    
+    
+    
+    40%{content: "India";}
+    
+    
+    
+    50%{content: "Paris";}
+    
+    
+    
+    60%{content: "Italy";}
+    
+        
+    I 70%{content: "Turkey";}
+    
+    
+    80%{content: "Mexico";}
+    
+        
+    90%{content: "Germany";}
+    
+    
+    100%{content: "United kingdom";}
+    
+ 
+    }
