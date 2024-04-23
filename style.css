@@ -1,45 +1,506 @@
-
-@keyframes changetext{
-
-    
-    
-    0%{content: "France";}
-    
-    
-    
-    10%{content: "Spain";}
-    
-    
-    
-    20%{content: "United States";}
-    
-    
-    
-    30%{content: "china";}
-    
-    
-    
-    40%{content: "India";}
-    
-    
-    
-    50%{content: "Paris";}
-    
-    
-    
-    60%{content: "Italy";}
-    
-        
-    I 70%{content: "Turkey";}
-    
-    
-    80%{content: "Mexico";}
-    
-        
-    90%{content: "Germany";}
-    
-    
-    100%{content: "United kingdom";}
-    
- 
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 20px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #ea4c89;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #navbar {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #navbar #logo {
+    font-size: 2rem;
+    color: #ea4c89;
+  }
+  
+  #navbar #logo span {
+    color: #333;
+  }
+  
+  #navbar .navbar-nav .nav-link {
+    color: #333;
+    padding: 0 10px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  #navbar .navbar-nav .nav-link:hover {
+    color: #ea4c89;
+    scale: 1.5rem;
+  }
+  
+  #navbar .form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+  }
+  
+  #navbar .btn {
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  
+  #navbar .btn:hover {
+    background-color: #ea4c89;
+    color: #fff;
+    scale: 1.5rem;
+  }
+  
+  /* Home Section Styles */
+  .home {
+    background-image: url("./images/home-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .home .content {
+    max-width: 800px;
+  }
+  
+  .home .content h1 {
+  font-size: 4rem;
+    margin-bottom: 20px;
+  }
+  
+  .home .content .changecontent {
+    animation: change 10s linear infinite;
+  }
+  
+  @keyframes change {
+    0% {
+      content: "Paris";
     }
+    25% {
+      content: "Rome";
+    }
+    50% {
+      content: "New York";
+    }
+    75% {
+      content: "Tokyo";
+    }
+    100% {
+      content: "Paris";
+    }
+  }
+  
+  .home .content a {
+    background-color: #ea4c89;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  
+  /* .slider {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    animation: slide 12s infinite;
+  } */
+  
+  .slide img {
+    width: 100%px;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  @keyframes slide {
+    0% {
+      left: 0;
+    }
+    20% {
+      left: 0;
+    }
+    30% {
+      left: -100%;
+    }
+    50% {
+      left: -100%;
+    }
+    60% {
+      left: -200%;
+    }
+    80% {
+      left: -200%;
+    }
+    100% {
+      left: 0;
+    }
+  } */
+
+  /* Book Section Styles */
+  .book {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+  }
+  
+  .book .main-text {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .book .main-text h1 {
+    font-size: 4rem;
+    color: #ea4c89;
+  }
+  
+  .book .card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .book .card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .book .card-body {
+    padding: 20px;
+  }
+  
+  .book .card-body h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .book .card-body p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .book .card-body .star {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .book .card-body .star i {
+    color: #ffc107;
+    font-size: 1.2rem;
+    margin-right: 5px;
+  }
+  
+  .book .card-body .star .checked {
+    color: #ea4c89;
+  }
+  
+  .book .card-body h6 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .book .card-body a {
+    background-color: #ea4c89;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  /* Packages Section Styles */
+  .packages {
+    padding: 50px 0;
+  }
+  
+  .packages .main-txt {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .packages .main-txt h1 {
+    font-size: 4rem;
+    color: #ea4c89;
+  }
+  
+  .packages .card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .packages .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .packages .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .packages .card-body {
+    padding: 20px;
+  }
+  
+  .packages .card-body h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .packages .card-body p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .packages .card-body .star {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .packages .card-body .star i {
+    color: #ffc107;
+    font-size: 1.2rem;
+    margin-right: 5px;
+  }
+  
+  .packages .card-body .star .checked {
+    color: #ea4c89;
+  }
+  
+  .packages .card-body h6 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .packages .card-body a {
+    background-color: #ea4c89;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  /* Services Section Styles */
+  .services {
+    padding: 50px 0;
+  }
+  
+  .services .main-txt {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .services .main-txt h1 {
+    font-size: 4rem;
+    color: #ea4c89;
+  }
+  
+  .services .card {
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+  }
+  
+  .services .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .services .card i {
+    font-size: 4rem;
+    color: #ea4c89;
+    margin-bottom: 20px;
+  }
+  
+  .services .card h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .services .card p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Gallary Section Styles */
+  .gallary {
+    padding: 50px 0;
+  }
+  
+  .gallary .main-txt {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .gallary .main-txt h1 {
+    font-size: 4rem;
+    color: #ea4c89;
+  }
+  
+  .gallary .card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .gallary .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .gallary .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* About Section Styles */
+  .about {
+    padding: 50px 0;
+    background-color: #f5f5f5;
+  }
+  
+  .about .main-txt {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .about .main-txt h1 {
+    font-size: 4rem;
+    color: #ea4c89;
+  }
+  
+  .about .card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+  }
+  
+  .about .card:hover {
+    transform: translateY(-10px);
+  }
+  .about .card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .about .card-body {
+    padding: 30px;
+  }
+  
+  .about .card-body h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .about .card-body p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .about #about-btn {
+    background-color: #ea4c89;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  /* Footer Styles */
+  #footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  #footer h1 {
+    font-size: 4rem;
+    color: #ea4c89;
+  }
+  
+  #footer p {
+    margin-bottom: 20px;
+  }
+  
+  #footer .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #footer .social-links i {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #footer .social-links i:hover {
+    transform: translateY(-5px);
+  }
+  
+  #footer .credit {
+    margin-bottom: 20px;
+  }
+  
+  #footer .copyright {
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
